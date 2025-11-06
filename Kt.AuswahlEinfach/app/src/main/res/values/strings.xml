@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AuswahlEinfach</string>
+    <string name="tvAnString">An</string>
+    <string name="cbNameString">CB</string>
+    <string name="buCheckBoxEinString">CB: Ein</string>
+    <string name="buCheckBoxUmString">CB: Um</string>
+    <string name="buToggleEinString">To: Ein</string>
+    <string name="buToggleUmString">To: Um</string>
+    <string name="buSwitchEinString">Sw: Ein</string>
+    <string name="buSwitchUmString">Sw: Um</string>
+    <string name="swNameString">Sw</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EingabeDatumUhrzeit</string>
+    <string name="etDatumString">Datum</string>
+    <string name="etUhrzeitString">Uhrzeit</string>
+    <string name="buDatumString">Ausgabe Datum</string>
+    <string name="buUhrzeitString">Ausgabe Uhrzeit</string>
+    <string name="tvDatumString">(Datum)</string>
+    <string name="tvUhrzeitString">(Uhrzeit)</string>
+</resources>

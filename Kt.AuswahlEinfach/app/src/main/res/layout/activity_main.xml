@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cbSchalter"
+        android:checked="true"
+        android:text="@string/cbNameString"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buCheckBoxEin"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buCheckBoxEinString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/cbSchalter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buCheckBoxUm"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buCheckBoxUmString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buCheckBoxEin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/tvAnString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buCheckBoxUm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ToggleButton
+        android:id="@+id/tbSchalter"
+        android:checked="true"
+        android:textAllCaps="false"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbSchalter" />
+
+    <Button
+        android:id="@+id/buToggleEin"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buToggleEinString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/tbSchalter"
+        app:layout_constraintTop_toBottomOf="@+id/buCheckBoxEin" />
+
+    <Button
+        android:id="@+id/buToggleUm"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buToggleUmString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buToggleEin"
+        app:layout_constraintTop_toBottomOf="@+id/buCheckBoxUm" />
+
+    <TextView
+        android:id="@+id/tvToggle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/tvAnString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buToggleUm"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckBox" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swSchalter"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:text="@string/swNameString"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbSchalter" />
+
+    <Button
+        android:id="@+id/buSwitchEin"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buSwitchEinString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/swSchalter"
+        app:layout_constraintTop_toBottomOf="@+id/buToggleEin" />
+
+    <Button
+        android:id="@+id/buSwitchUm"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buSwitchUmString"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/buSwitchEin"
+        app:layout_constraintTop_toBottomOf="@+id/buToggleUm" />
+
+    <TextView
+        android:id="@+id/tvSwitch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/tvAnString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buSwitchUm"
+        app:layout_constraintTop_toBottomOf="@+id/tvToggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

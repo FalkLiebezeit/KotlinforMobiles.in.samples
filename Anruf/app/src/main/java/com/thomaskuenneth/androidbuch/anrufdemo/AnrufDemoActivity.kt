@@ -1,0 +1,97 @@
+package com.thomaskuenneth.androidbuch.anrufdemo
+
+import android.Manifest
+import android.content.*
+import android.content.pm.*
+import android.net.Uri
+import android.os.Bundle
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
+private const val REQUEST_CALL_PHONE = 123
+
+class AnrufDemoActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(R.layout.activity_main)
+
+        sofort.setOnClickListener {
+            // sofort wählen
+            val intent = Intent(Intent.ACTION_CALL,
+                Uri.parse("tel:+49 341 67960922")) // "tel:+49 341 69834340"
+
+
+
+            try {
+
+                startActivity(intent)
+
+            } catch (e: SecurityException) {
+                Toast.makeText(this,
+                    R.string.no_permission,
+                    Toast.LENGTH_LONG).show()
+            }
+
+
+        }
+
+
+        sofort.isEnabled =
+            if (checkSelfPermission(Manifest.permission.CALL_PHONE) !=
+                PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(arrayOf(Manifest.permission.CALL_PHONE),
+                    REQUEST_CALL_PHONE)
+                false
+            }
+            else
+                true
+
+
+        dialog.setOnClickListener {
+            // Wähldialog anzeigen
+            val intent = Intent(Intent.ACTION_DIAL,
+                Uri.parse("tel:+49 341 67960922")) // "tel:+49 341 69834340"
+
+
+            startActivity(intent)
+        }
+
+
+        sms.setOnClickListener {
+
+            // SMS senden
+            val telnr = "+49 341 69834340 "//  "123-456-789"
+
+            val smsUri = Uri.parse("smsto:$telnr")
+
+            val sendIntent = Intent(Intent.ACTION_SENDTO,
+                smsUri)
+
+            sendIntent.putExtra("sms_body",
+                "Hier steht der Text der Nachricht...")
+
+            startActivity(sendIntent)
+        }
+    }
+
+
+
+
+    override fun onRequestPermissionsResult(requestCode: Int,
+                                            permissions: Array<String>,
+                                            grantResults: IntArray) {
+
+
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+
+        if (requestCode == REQUEST_CALL_PHONE &&
+            (grantResults.isNotEmpty() &&
+                    grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+            sofort.isEnabled = true
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BruchTraining</string>
+    <string name="rbLeichtString">Leicht</string>
+    <string name="rbMittelString">Mittel</string>
+    <string name="rbSchwerString">Schwer</string>
+    <string name="buAufgabeString">Aufgabe</string>
+    <string name="tvAufgabeString">(Aufgabe)</string>
+    <string name="buErgebnisString">Ergebnis</string>
+    <string name="tvErgebnisString">(Ergebnis)</string>
+</resources>

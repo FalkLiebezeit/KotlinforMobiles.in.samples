@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fakultaet</string>
+    <string name="minusBtnText">-</string>
+    <string name="plusBtnText">+</string>
+    <string name="_0">0</string>
+    <string name="resultBtnText">Fakultät berechnen</string>
+    <string name="result">0</string>
+</resources>
