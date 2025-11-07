@@ -8,4 +8,4 @@ This is an unofficial fork of samples I found on my journey through the internet
 You'll need Android Studio Otter | 2025.2.1 and above.
 
 ## Guides and tutorials
-* [Official book site](https://kotlinlang.org)
+* [Official Kotlin site](https://kotlinlang.org)
