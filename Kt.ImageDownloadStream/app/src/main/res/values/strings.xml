@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">imgtst</string>
-    <string name="flagge_von_baden_w_rttemberg">Flagge von Baden-Württemberg</string>
-    <string name="lorem_ipsum">Lorem ipsum\ndolores</string>
-    <string name="my_hint">My Hint</string>
-    <string name="versteckter_text">versteckter Text</string>
-    <string name="bla">bla</string>
-    <string name="bild_laden_und_anzeigen">Bild laden und anzeigen</string>
-</resources>
