@@ -9,3 +9,4 @@ You'll need Android Studio Otter | 2025.2.1 and above.
 
 ## Guides and tutorials
 * [Official Kotlin site](https://kotlinlang.org)
+* [Android Developer site](https://developer.android.com)
